@@ -1,0 +1,113 @@
+@import "_nullstyle";
+
+.wrapper{
+    display: flex;
+    min-height: 100%;
+    background-color: #f7f7fc;
+    .page{
+        display: flex;
+        flex-direction:column;
+        flex:1 1 auto;
+        background-color: rgb(65, 63, 63);
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex:1 0 auto;
+            p{
+                text-align: center;
+                padding: 0 20px;
+                width: 100%;
+                font-size: 70px;
+                color: white;
+                @media(max-width:992px){
+                    font-size: 60px; 
+                }
+                @media(max-width:768px){
+                    font-size: 50px; 
+                }
+                @media(max-width:576px){
+                    font-size: 40px; 
+                }
+            }
+        }
+    }
+    .social{
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .social__item{
+            height: 50px;
+            width: 50px;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .content__body{
+        max-width: 1800px;
+            margin: 0 auto;
+            padding: 20px 0;
+        .page__two{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            flex:1 1 auto;
+            .block__item{
+                display: flex;
+                align-items: center;
+                flex-direction:column;
+                flex:0 0 360px;
+                overflow: hidden;
+                border-radius: 10px;
+                margin: 30px;
+                border: 1px solid rgb(255, 255, 255);
+                box-shadow:5px 5px rgba(67, 67, 67, 0.234);
+                background-color: #fff;
+                .item__img{
+                    width: 100%;
+                    height: 200px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .item__text{
+                    display: flex;
+                    flex-direction:column;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        font-size: 19px;
+                        padding: 15px;
+                        text-align: center;
+                    }
+                    a{
+                        text-transform: uppercase;
+                        color: black;
+                        font-weight: bold;
+                        font-size: 20px;
+                        padding: 0 0 20px 0;
+                        &:hover{
+                            color:rgb(85, 82, 82);
+                        }
+                    }
+                }
+            }
+        }
+        .page__name{
+            display: flex;
+            justify-content: center;
+            span{
+                font-size: 60px;
+            }
+        }
+    }
+    
+}
+ 
